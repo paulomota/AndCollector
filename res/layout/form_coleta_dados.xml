@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <TextView android:id="@+id/nomeQuestionario" android:layout_width="fill_parent" android:layout_height="fill_parent" 
+  		android:layout_gravity="center" />
+  <View android:layout_height="2dip" android:background="#FF909090" android:layout_width="fill_parent"/>
+  
+  <TextView android:id="@+id/infoQuestao" android:layout_gravity="center_horizontal" 
+  		android:layout_height="fill_parent" android:layout_width="fill_parent"/>
+  
+  <EditText android:id="@+id/campoDescricao" android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" android:enabled="false"/>
+  		
+  <EditText android:id="@+id/campoRespostaAberta" android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content" android:visibility="invisible"/>
+  
+  	<RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"
+		android:id="@+id/radioGroup">
+		
+		<RadioButton android:id="@+id/resposta1" android:layout_width="wrap_content" android:layout_height="wrap_content" 	
+			android:checked="false" android:visibility="invisible"/>
+		
+		<RadioButton android:id="@+id/resposta2" android:layout_width="wrap_content" android:layout_height="wrap_content" 	
+			android:checked="false" android:visibility="invisible"/>
+		
+		<RadioButton android:id="@+id/resposta3" android:layout_width="wrap_content" android:layout_height="wrap_content" 	
+			android:checked="false" android:visibility="invisible" />
+			
+		<RadioButton android:id="@+id/resposta4" android:layout_width="wrap_content" android:layout_height="wrap_content" 	
+			android:checked="false" android:visibility="invisible" />
+			
+	</RadioGroup>
+  
+  	<TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+  		<TableRow>
+	  		<ImageButton android:id="@+id/btAnterior" 
+	  				 android:layout_width="50px"
+	  				 android:layout_height="50px"
+	  				 android:src="@drawable/previous" />
+	  				 
+			 <ImageButton android:id="@+id/btProximo" 
+	  				 android:layout_width="50px"
+	  				 android:layout_height="50px"
+	  				 android:src="@drawable/next" />
+	  		<Button android:text="Concluir" android:id="@+id/btConcluir" android:visibility="invisible"/>
+		 </TableRow>
+  	</TableLayout>
+  
+</LinearLayout>
+
+</ScrollView>

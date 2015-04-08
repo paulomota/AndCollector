@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	android:background="#ffffff"
+	android:orientation="vertical"
+	android:scrollbars="vertical">
+	
+	<TableRow>
+		<TextView android:id="@+id/text1" android:text="Descricao:"
+			android:textColor="#000000" />
+		<EditText android:id="@+id/descricaoQuestao" android:width="240px" android:layout_weight="3"/>
+	</TableRow>
+	
+	<TableRow>
+		<TextView android:id="@+id/tipoQuestao" android:text="Tipo da Questão:"
+			android:textColor="#000000" />
+		
+		<RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical"
+			android:id="@+id/radioGroup">
+			
+			<RadioButton android:id="@+id/radioSimOuNao" android:layout_width="wrap_content" android:layout_height="wrap_content" 	
+				android:text="Sim ou Não" android:checked="false" />
+			
+			<RadioButton android:id="@+id/radioMultiplaEscolha" android:layout_width="wrap_content" android:layout_height="wrap_content" 	
+				android:text="Múltipla Escolha" android:checked="false" />
+			
+			<RadioButton android:id="@+id/radioAberta" android:layout_width="wrap_content" android:layout_height="wrap_content" 	
+				android:text="Aberta" android:checked="false" android:maxHeight="3px" />
+		</RadioGroup>
+	</TableRow>
+	
+	<TableLayout android:id="@+id/formMultiplaEscolha"  android:visibility="invisible">
+		<TableRow>
+			<TextView android:id="@+id/text2" android:text="Cadastre as Respostas:"
+				android:textColor="#000000" />
+		</TableRow>
+		<TableRow>
+			<TextView android:id="@+id/text3" android:text="1)"
+				android:textColor="#000000" />
+				<EditText android:id="@+id/resposta1" android:width="240px" android:layout_weight="1"/>
+		</TableRow>
+		<TableRow>
+			<TextView android:id="@+id/text4" android:text="2)"
+				android:textColor="#000000" />
+				<EditText android:id="@+id/resposta2" android:width="240px" android:layout_weight="1"/>
+		</TableRow>
+		<TableRow>
+			<TextView android:id="@+id/text5" android:text="3)"
+				android:textColor="#000000" />
+				<EditText android:id="@+id/resposta3" android:width="240px" android:layout_weight="1"/>
+		</TableRow>
+		<TableRow>
+			<TextView android:id="@+id/text6" android:text="4)"
+				android:textColor="#000000" />
+				<EditText android:id="@+id/resposta4" android:width="240px" android:layout_weight="1"/>
+		</TableRow>
+	</TableLayout>
+	
+	<LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_gravity="center">
+		<Button android:id="@+id/salvarQuestao" android:text=" Salvar " 
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<Button android:id="@+id/btCancelar" android:text="Cancelar" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	</LinearLayout>
+</TableLayout>
+
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content" android:stretchColumns="1">
+  
+  <TableRow>
+  		<TextView android:text="AndCollector"></TextView>
+  </TableRow>
+
+  <TableRow android:layout_width="wrap_content" android:layout_height="fill_parent">
+  		<View android:layout_height="3dip" android:background="#FF909090" android:layout_width="fill_parent"/>
+  		<View android:layout_height="3dip" android:background="#FF909090" android:layout_width="fill_parent"/>
+  </TableRow>	
+	
+  <TableRow android:layout_gravity="center">
+  </TableRow>
+	
+  <TableRow android:layout_gravity="center">
+  		<TextView android:text="Módulo Construção" android:layout_width="100px" 
+  			android:layout_gravity="center"></TextView>
+  		<ImageButton android:id="@+id/construcao" 
+  				 android:layout_height="100px"
+  				 android:layout_width="100px"
+  				 android:src="@drawable/construcao01_128x128" />
+  </TableRow>	
+	
+  <TableRow android:layout_gravity="center">
+  </TableRow>	
+	
+	
+  <TableRow android:layout_gravity="center">
+  		<TextView android:text="Módulo Coleta de Dados" android:layout_width="100px" 
+  				android:layout_gravity="center"></TextView>
+		<ImageButton android:id="@+id/coleta" 
+  				 android:layout_width="100px"
+  				 android:layout_height="100px"
+  				 android:src="@drawable/coleta01_128x128" />
+  </TableRow>
+  
+  <TableRow android:layout_gravity="center">
+  </TableRow>
+  
+</TableLayout>

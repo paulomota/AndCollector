@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="br.cic.unb.android" android:versionCode="1"
+	android:versionName="1.0.0">
+	<application android:icon="@drawable/icon" android:theme="@android:style/Theme.Light">
+		<activity android:name=".activity.TelaInicialActivity" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".activity.CadastroQuestionarioActivity" android:label="As Suas Aplicações" />
+		<activity android:name=".activity.EditarQuestionarioActivity" android:label="Editar Questionário" />
+		<activity android:name=".activity.BuscarQuestionarioActivity" android:label="Buscar Questionário" />
+		<activity android:name=".activity.CadastroQuestaoActivity" android:label="Cadastrar Questões" />
+		<activity android:name=".activity.ListarQuestoesActivity" android:label="Questões Cadastradas" />
+		<activity android:name=".activity.EditarQuestaoActivity" android:label="Editar Questão" />	
+		<activity android:name=".activity.ColetaDeDadosActivity" android:label="Coleta de Dados" />	
+		<activity android:name=".activity.ListarQuestionariosParaColetaActivity" android:label="Escolha uma Aplicação" />
+		<activity android:name=".activity.InformarEntrevistadoActivity" android:label="Coleta de Dados" />
+	</application>
+</manifest>
